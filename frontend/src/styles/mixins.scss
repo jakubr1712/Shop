@@ -1,0 +1,18 @@
+@mixin createFlex(
+  $flexDirection: false,
+  $justifyC: false,
+  $alignI: false,
+  $flexW: false
+) {
+  display: flex;
+  flex-direction: $flexDirection;
+  @if ($justifyC) {
+    justify-content: $justifyC;
+  }
+  @if ($alignI) {
+    align-items: $alignI;
+  }
+  @if ($flexW) {
+    flex-wrap: $flexW;
+  }
+}

@@ -1,0 +1,27 @@
+.single-existing-product {
+  display: grid;
+  grid-template-columns: 280px 60px;
+  align-items: center;
+  justify-items: center;
+  gap: 0 1rem;
+  margin: 20px 0;
+  h4 {
+    span {
+    }
+  }
+  &__actions {
+    justify-self: end;
+
+    .edit-icon {
+      color: $c-lynch;
+      transition: all 0.2s linear;
+      &:hover {
+        color: $c-black;
+      }
+    }
+
+    .delete-btn-admin {
+      right: auto;
+    }
+  }
+}

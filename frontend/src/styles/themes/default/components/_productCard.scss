@@ -1,0 +1,29 @@
+.product-card {
+  position: relative;
+  background: $c-white;
+  border-radius: 5px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  width: 230px;
+  height: 230px;
+  @include createFlex(column, center, center);
+
+  &__img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0.25rem;
+  }
+
+  &__price {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 2px;
+    border: 1px solid $c-black;
+    border-radius: 3px;
+  }
+  &__name {
+    margin-bottom: 0.5rem;
+    color: $c-lynch;
+  }
+}

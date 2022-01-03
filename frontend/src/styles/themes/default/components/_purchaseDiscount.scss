@@ -1,0 +1,31 @@
+.discount-code {
+  position: absolute;
+  width: 280px;
+  bottom: -2.1rem;
+  left: 20px;
+  @include createFlex(row, space-between);
+  padding: 5px;
+  background-color: $c-white;
+  border: 2px solid $c-persianPink;
+
+  input {
+    width: 100px;
+  }
+
+  &__info {
+    position: absolute;
+    bottom: -45px;
+    left: 0px;
+    line-height: 20px;
+
+    .bold {
+      color: $c-green;
+      padding-left: 25px;
+    }
+
+    .delete-btn {
+      bottom: 0;
+      left: 0;
+    }
+  }
+}

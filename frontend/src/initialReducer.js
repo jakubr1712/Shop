@@ -1,0 +1,6 @@
+export const InitialReducerType = {
+  ADD_PRODUCT: "ADD_PRODUCT",
+  GET_TOTALS: "GET_TOTALS",
+  FILTER_PRODUCTS: "FILTER_PRODUCTS",
+  REMOVE_ITEM: "REMOVE_ITEM",
+};

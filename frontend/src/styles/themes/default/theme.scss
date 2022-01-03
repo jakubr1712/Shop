@@ -1,0 +1,24 @@
+@import "../../colors.scss";
+@import "../../mixins";
+@import "../../fonts";
+@import "../../global";
+
+@import "./components/sectionWithProducts.scss";
+@import "./components/purchaseSummary.scss";
+@import "./components/productsLists.scss";
+@import "./components/productSummary.scss";
+@import "./components/purchasePrice.scss";
+@import "./components/purchaseDiscount.scss";
+@import "./components/purchaseSummaryTop.scss";
+@import "./components/searchBar.scss";
+@import "./components/productCard.scss";
+@import "./components/button.scss";
+@import "./components/navbar.scss";
+@import "./components/page404.scss";
+@import "./components/login.scss";
+@import "./components/adminPage.scss";
+@import "./components/editProduct.scss";
+@import "./components/formAlert.scss";
+@import "./components/manageProducts.scss";
+@import "./components/singleExistingProduct.scss";
+@import "./components/showClients.scss";

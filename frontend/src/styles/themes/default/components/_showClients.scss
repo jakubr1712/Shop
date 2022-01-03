@@ -1,0 +1,32 @@
+.table {
+  width: 800px;
+
+  .table-header {
+    display: flex;
+    width: 100%;
+    background: $c-black;
+    padding: 10px 0;
+
+    .header__item {
+      text-transform: uppercase;
+      color: $c-white;
+      width: 266px;
+    }
+  }
+
+  .table-row {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+
+    &:nth-of-type(odd) {
+      background: $color-highlight;
+    }
+  }
+
+  .table-data,
+  .header__item {
+    flex: 1 1 20%;
+    text-align: center;
+  }
+}

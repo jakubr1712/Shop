@@ -1,0 +1,38 @@
+.purchase-list {
+  .purchase-summary {
+    &__price {
+      @include createFlex(row, space-between, center);
+      margin: 0.8rem 0;
+      padding: 0.6rem 0 0.4rem;
+      border-top: 1px solid $c-gray;
+      border-bottom: 1px solid $c-gray;
+      color: $c-emperor;
+      margin: 0.4rem 0.3rem;
+      padding: 0.4rem 0.5rem;
+      border-bottom: none;
+      user-select: none;
+
+      .item-amount {
+        @include createFlex(column, center, center);
+
+        &__btn {
+          @include createFlex(row, center, center);
+          cursor: pointer;
+          &:hover {
+            color: $c-black;
+            transition: all 0.2s linear;
+          }
+        }
+      }
+
+      .product-price {
+        font-weight: 700;
+        color: $c-black;
+      }
+    }
+
+    &:last-child {
+      border-bottom: 1px solid $c-gray;
+    }
+  }
+}

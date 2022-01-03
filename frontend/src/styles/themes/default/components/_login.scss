@@ -1,0 +1,93 @@
+.form-container {
+  background-color: $c-white;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+  max-width: 400px;
+  margin: 30px auto 0;
+
+  .form {
+    padding: 30px 40px;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    &__form-control {
+      margin-bottom: 10px;
+      padding-bottom: 20px;
+      position: relative;
+
+      label {
+        color: $c-emperor;
+        display: block;
+        margin-bottom: 5px;
+      }
+      input {
+        border: 2px solid #f0f0f0;
+        border-radius: 3px;
+        display: block;
+        width: 100%;
+        padding: 10px;
+        font-size: 14px;
+
+        &:focus {
+          outline: 0;
+          border-color: $c-emperor;
+        }
+      }
+
+      small {
+        color: $c-error;
+        font-size: 13px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        visibility: hidden;
+
+        &.info {
+          visibility: visible;
+          color: $c-gray;
+        }
+      }
+
+      &.success input {
+        border-color: $c-success;
+      }
+
+      &.error {
+        input {
+          border-color: $c-error;
+        }
+        small {
+          visibility: visible;
+        }
+      }
+    }
+
+    &__btn--submit {
+      cursor: pointer;
+      background-color: $c-lynch;
+      border: 2px solid $c-green;
+      border-radius: 4px;
+      color: $c-white;
+      display: block;
+      font-size: 16px;
+      padding: 10px;
+      margin-top: 20px;
+      width: 100%;
+    }
+
+    .change-action {
+      margin-top: 10px;
+      font-size: 15px;
+
+      &__btn {
+        cursor: pointer;
+        background-color: transparent;
+        border: none;
+        margin-left: 10px;
+        color: #bb2525;
+      }
+    }
+  }
+}

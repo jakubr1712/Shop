@@ -1,0 +1,134 @@
+.notfound__wrapper {
+  position: relative;
+  height: 100vh;
+
+  .notfound {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 520px;
+    width: 100%;
+    line-height: 1.4;
+    text-align: center;
+
+    .notfound-404 {
+      position: relative;
+      height: 240px;
+
+      h1 {
+        font-family: "Montserrat", sans-serif;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 252px;
+        font-weight: 900;
+        margin: 0px;
+        color: #262626;
+        text-transform: uppercase;
+        letter-spacing: -40px;
+        margin-left: -20px;
+
+        & > span {
+          text-shadow: -8px 0px 0px $c-white;
+        }
+
+        @media only screen and (max-width: 767px) {
+          font-size: 200px;
+        }
+
+        @media only screen and (max-width: 480px) {
+          font-size: 162px;
+          height: 150px;
+          line-height: 162px;
+        }
+      }
+      h3 {
+        font-family: "Cabin", sans-serif;
+        position: relative;
+        font-size: 16px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #262626;
+        margin: 0px;
+        letter-spacing: 3px;
+        padding-left: 6px;
+      }
+
+      h2 {
+        font-family: "Cabin", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $c-black;
+        margin-top: 0px;
+        margin-bottom: 25px;
+
+        @media only screen and (max-width: 480px) {
+          font-size: 16px;
+        }
+      }
+
+      @media only screen and (max-width: 767px) {
+        height: 200px;
+      }
+
+      @media only screen and (max-width: 480px) {
+        height: 162px;
+      }
+    }
+
+    .notfound-btn__wrapper {
+      position: relative;
+      display: inline-flex;
+      width: 180px;
+      height: 55px;
+      margin: 0 15px;
+      perspective: 1000px;
+
+      .notfound-btn {
+        position: relative;
+        display: inline-flex;
+        width: 180px;
+        height: 55px;
+        margin: 0 15px;
+
+        perspective: 1000px;
+      }
+      .notfound-btn span {
+        font-size: 19px;
+        letter-spacing: 1px;
+        transform-style: preserve-3d;
+        transform: translateZ(-25px);
+        transition: transform 0.25s;
+        font-family: "Montserrat", sans-serif;
+      }
+      .notfound-btn span:before,
+      .notfound-btn span:after {
+        position: absolute;
+        content: "WRÓĆ";
+        height: 55px;
+        width: 180px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 5px solid $c-black;
+        box-sizing: border-box;
+        border-radius: 5px;
+      }
+      .notfound-btn span:before {
+        color: $c-white;
+        background: $c-black;
+        transform: rotateY(0deg) translateZ(25px);
+      }
+      .notfound-btn span:after {
+        color: $c-black;
+        transform: rotateX(90deg) translateZ(25px);
+      }
+      .notfound-btn span:hover {
+        transform: translateZ(-25px) rotateX(-90deg);
+      }
+    }
+  }
+}
